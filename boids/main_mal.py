@@ -20,7 +20,6 @@ class Game:
 	def new(self):
 		self.start_time = pg.time.get_ticks()
 		self.all_sprites = pg.sprite.Group()
-
 		#self.multiple_obj = [obj(self) for i in range(NUMBER_OF_OBJ)]
 
 	def run(self):
