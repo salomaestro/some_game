@@ -1,5 +1,6 @@
 import pygame as pg
 from settings import *
+from util import make_map
 
 class Magazine_on_ground(pg.sprite.Sprite):
     def __init__(self, game):
@@ -14,3 +15,11 @@ class Magazine_on_ground(pg.sprite.Sprite):
 
     def update(self):
         pass
+
+class Walls(pg.sprite.Sprite):
+    def __init__(self, game):
+        self.groups = [game.walls, game.all_sprites]
+        pg.sprite.Sprite.__init__(self, self.groups)
+        self.game = game
+
+        
