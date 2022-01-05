@@ -20,6 +20,7 @@ class Game:
         self.projectiles = pg.sprite.Group()
         self.pickable = pg.sprite.Group()
         self.enemy_sprites = pg.sprite.Group()
+        self.walls = pg.sprite.Group()
 
         self.p1 = Player(self, 30, 30)
         mag1 = Magazine_on_ground(self)
